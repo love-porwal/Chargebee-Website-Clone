@@ -61,45 +61,34 @@ a {
     color: black;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: blue;
-}
-
-
 img {
     width: 100%;
+
+    /* border: 1px solid rgb(231, 173, 14); */
 }
 
 #banner1 {
-    margin: auto;
-    width: 90%;
+    margin-top: 40px;
     display: flex;
     gap: 10%;
-    padding: 0px 20px;
+    padding: 0px 40px;
     height: 600px;
-    border: 1px solid rgb(231, 14, 14);
+    /* border: 1px solid rgb(231, 14, 14); */
 }
 
-#banner1 >div:nth-child(1) {
-    width: 50%;
-    /* border: 1px solid rgb(14, 231, 25); */
+#banner1 div:nth-child(1) {
+    width: 45%;
+    /* border: 1px solid rgb(14, 108, 231); */
 
 }
-#banner1 h1,#banner1 h4 {
-    margin-bottom: 20px;
-}
 
-#banner1 > div:nth-child(1) div {
-    /* width: 100%; */
-     padding: 0px 30px;
-     row-gap: 10px
-
-     ;
+#banner1 div:nth-child(1) div {
+    width: 100%;
+    /* margin: 0px 20px; */
     /* flex-wrap: wrap; */
     font-size: 25px;
-    /* margin-bottom: 35px; */
-    border: 1px solid rgb(14, 198, 231);
+   margin-bottom: 35px;
+    /* border: 1px solid rgb(14, 198, 231); */
 }
 
 #banner1 div:nth-child(1) div:nth-child(3) {
@@ -146,56 +135,46 @@ button {
         rgb(255, 156, 85) 0px 0px 0px 12px,
         rgb(255, 85, 85) 0px 0px 0px 15px;
 }
-
 .top {
-
+    
     border: 1px solid pink;
-    display: flex;
+      display: flex;
     gap: 10%;
     padding: 0px 40px;
     height: 600px;
 }
-
-.top>div:nth-child(2) {
+.top> div:nth-child(2){
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
     /* margin-bottom: 35px; */
-
+  
 }
-
-.top>div:nth-child(2) img {
+.top> div:nth-child(2) img {
     width: 10%;
 }
-
-.mid_part {
+.mid_part{
     display: flex;
 }
-
-.ban_2 {
+.ban_2{
     display: flex;
 }
-
-.ban_2 div:nth-child(2)>div {
+.ban_2 div:nth-child(2) >div {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
 }
-
 .bottom img {
-    width: 10%;
+width: 10%;
 }
-
 .bottom {
     display: flex;
 }
-
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .footer ul {
     display: flex;
     flex-direction: column;
-
+   
 }
