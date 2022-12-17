@@ -28,14 +28,14 @@ nav {
 
 #navBar div:nth-child(2) {
     /* border: 1px solid rgb(24, 184, 59); */
-    width: 50%;
+    width: 45%;
 
 
 }
 
 #navBar div:nth-child(3) {
     /* border: 1px solid rgb(24, 184, 59); */
-    width: 28%;
+    width: 40%;
 }
 
 #navBar ul {
@@ -43,7 +43,7 @@ nav {
     display: flex;
     gap: 3%;
     justify-content: flex-start;
-    font-size: 25px;
+    font-size: 22px;
     list-style: none;
     color: black;
 
@@ -61,6 +61,12 @@ a {
     color: black;
 }
 
+a:hover {
+
+    text-decoration: underline;
+    color: rgb(96, 59, 230);
+}
+
 img {
     width: 100%;
 
@@ -69,15 +75,17 @@ img {
 
 #banner1 {
     margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     gap: 10%;
     padding: 0px 40px;
-    height: 600px;
+    height: 500px;
+    margin-left: 40px;
     /* border: 1px solid rgb(231, 14, 14); */
 }
 
 #banner1 div:nth-child(1) {
-    width: 45%;
+    width: 50%;
     /* border: 1px solid rgb(14, 108, 231); */
 
 }
@@ -86,29 +94,39 @@ img {
     width: 100%;
     /* margin: 0px 20px; */
     /* flex-wrap: wrap; */
-    font-size: 25px;
-   margin-bottom: 35px;
+    font-size: 22px;
+    margin-bottom: 40px;
     /* border: 1px solid rgb(14, 198, 231); */
 }
 
 #banner1 div:nth-child(1) div:nth-child(3) {
     display: flex;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 8%;
     align-items: stretch;
-
+    width: 80%;
     /* border: 1px solid rgb(231, 14, 141); */
 }
 
-#banner1 div:nth-child(1) div:nth-child(3) div {
-    /* border: 1px solid rgb(14, 231, 141); */
-    width: 30%;
+#h4 {
+    color: #767699;
+}
+
+#btn-1 {
+    background-color: #5c00b5;
+    color: white;
+    border: none;
 
 }
+
 
 #banner1 div:nth-child(1) div:nth-child(3) div button {
     border-radius: 10px;
     font-size: 20px;
     padding: 5px 10px;
+    height: 50px;
+    border-radius: 50px;
+    width: 100%;
 }
 
 
@@ -124,57 +142,123 @@ img {
     /* border: 1px solid rgb(14, 231, 141); */
 }
 
-button {
-    width: 100%;
+
+.top {
+
+    width: 80%;
+    display: flex;
+    gap: 20%;
+    padding: 0px 40px;
+    height: 800px;
+    /* border: 1px solid rgb(14, 231, 141); */
+    font-size: 22px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-bottom: 120px;
 }
 
-#movie {
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
-        rgb(31, 193, 27) 0px 0px 0px 6px,
-        rgb(255, 217, 19) 0px 0px 0px 9px,
-        rgb(255, 156, 85) 0px 0px 0px 12px,
-        rgb(255, 85, 85) 0px 0px 0px 15px;
-}
-.top {
-    
-    border: 1px solid pink;
-      display: flex;
+.top>div:nth-child(1) {
+    width: 100%;
+    /* border: 1px solid pink; */
     gap: 10%;
-    padding: 0px 40px;
-    height: 600px;
+    font-size: 25px;
+    padding-left: 20px;
+
 }
-.top> div:nth-child(2){
+
+.top>div:nth-child(1) h1 {
+    /* font-size: 25px; */
+    gap: 10%;
+    margin-bottom: 20px;
+}
+
+.top>div:nth-child(1) h4 {
+    font-size: 20px;
+    color: #767699;
+}
+
+.top>div:nth-child(2) {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    /* margin-bottom: 35px; */
-  
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 8%;
+
 }
-.top> div:nth-child(2) img {
+
+.top>div:nth-child(2) div {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    padding: 30px 40px;
+}
+
+.top>div:nth-child(2) div h2 {
+    margin-bottom: 20px;
+}
+
+.top>div:nth-child(2) div h4 {
+    margin-bottom: 20px;
+}
+
+.top>div:nth-child(2) div span {
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.top>div:nth-child(2) div span a {
+    color: #5c00b5;
+}
+
+.top>div:nth-child(2) img {
+    width: 30%;
+}
+#upper-mid{
+margin-top: 40x;
+border: 1px solid pink;
+text-align: center;
+}
+#upper-mid h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+    #upper-mid h2{
+        margin-bottom: 20px;
+        font-size: 22px;
+    color: #767699;
+}
+   
+#upper-mid ~ div{
+    display: flex;
+}
+.mid_part {
+    display: flex;
+}
+
+.ban_2 {
+    display: flex;
+}
+
+.ban_2 div:nth-child(2)>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.bottom img {
     width: 10%;
 }
-.mid_part{
-    display: flex;
-}
-.ban_2{
-    display: flex;
-}
-.ban_2 div:nth-child(2) >div {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.bottom img {
-width: 10%;
-}
+
 .bottom {
     display: flex;
 }
+
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .footer ul {
     display: flex;
     flex-direction: column;
-   
+
 }
