@@ -18,3 +18,7 @@ function slide() {
 }
 setInterval("slide()", 2000);
 
+function logo() {
+    window.location = "index.html";
+}
+

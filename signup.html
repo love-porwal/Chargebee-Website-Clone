@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in Page</title>
-  </head>
-  <body>
-    <div class="nav">
-      <a href="./index.html">Signup</a>
-      <a href="./signin.html">Signin</a>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="box1">
+        <div><a href="./index.html"><img id="img_1" src="./sys_logo.PNG" ></a>
+            <div class="rightnav">
+                <p>Already have an account?
+
+                    <a href="./login.html"> Login </a>
+                </p>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box2_1">
+                <img id="img2_1" src="./sys_logo.PNG" style="width: 30%;" onclick="logo()">
+                <div>
+                    <p id="p1">ANNOUNCING SUMMER 2022 PRODUCT RELEASE</p>
+                    <p id="p2"><a>Monetize Effectively to Tackle Market</a></p>
+                </div>
+                <div class="img3_1"> <img src="https://d190vb4jo83j4z.cloudfront.net/Login-fall-2020_banner.png"
+                        alt="Chargebee" align="left">
+                    <p class="para1">SupportSys Fall 2020 Product Lineup brings to you new capabilities and some key
+                        upgrades
+                        designed to accelerate your time to market.</p>
+                </div>
+                <p class="para2">Check out the Fall 2020 updates</p>
+            </div>
+
+
+            <div class="box2_2">
+                <div>
+                    <h4 id="h4">Sign in to SupportSys!</h4>
+
+                    <form action="/action_page.php">
+                        <label for="name"></label>
+                        <input type="text" class="input" id="name" placeholder=" Name"><br><br>
+                        <label for="mail"></label>
+                        <input type="text" class="input" id="email" placeholder=" name@company.com"><br><br>
+                        <label for="passord"></label>
+                        <input type="password" class="input" id="password" placeholder=" Password"><br><br>
+                        <!-- <h4 class="signup" align="left"> Completed SignUp </h4> -->
+                       <button class="signup">Completed SignUp</button></a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="p6">
+            <p>🌎 You are on our US data hosting centre. Switch to our EU data hosting centre</p>
+        </div>
     </div>
-    <div id="signin">
-      <h1 id="heading">Please Enter Your Details</h1>
-      <form>
-        <input type="email" id="email" />
-        <input type="password" id="password" />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  </body>
-  <script>
-    let data =JSON.parse(localStorage.getItem("account-data"))||[];
-     
-    let form1 = document.querySelector("form");
+    <!-- <div id="signup">
+        <h1>Please Enter Your Details</h1> --> -->
+    <!-- <form>
+          <input type="text" id="name">
+          <input type="email" id="email">
+          <input type="password" id="password">
+          <input type="submit" value="Submit" />
+        </form> -->
+</body>
 
-    form1.addEventListener("submit",function(event){
-     event.preventDefault();
-     let enterEmail = document.querySelector("#email").value;
-     let passPassword = document.querySelector("#password").value;
-
-     
-     
-     let flag_email = "No"
-
-     for(let i=0;i<data.length;i++){
-      if(enterEmail == data[i].email){
-        flag_email = "Yes";
-        Password = data[i].password;
-      }
-     }
-     console.log(flag_email,Password);
-
-    
-     if(flag_email == "Yes" && passPassword ==Password){
-      document.querySelector("#heading").textContent = "Sign in Successful";
-
-     }else if(flag_email == "Yes" && passPassword!==Password){
-      document.querySelector("#heading").textContent = "Wrong Credentials";
-      
-     }else{
-      document.querySelector("#heading").textContent = "Please Enter Your Details";
-      
-     }
-
-
-})
-
-  </script>
 </html>
+<script src="./signup.js"></script>
+<script src="./home.js"></script>
