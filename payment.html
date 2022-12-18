@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Demo</title>
+        <!-- -------------fav icon---- -->
+        <!-- <link rel="stylesheet" href="./index.css"> -->
+        <link rel="stylesheet" href="./sucess.css">
+        <link rel="stylesheet" href="./payment.css">
+       
+        
+        <!-- -------------------font Awesome Link------------- -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <div id="navBar">
+            <div>
+                <img src="./sys_logo.PNG" alt="logo" onclick = "logo()">
+            </div>
+            <div>
+                <ul>
+                    <li class="item"><a href="#">Product</a></li>
+                    <li class="item"><a href="#">Price</a></li>
+                    <li class="item"><a href="#">Solutions</a></li>
+                    <li class="item"><a href="#">Customers</a></li>
+                    <li class="item"><a href="#">Resource</a></li>
+                    <li class="item"><a href="#">Partners</a></li>
+                </ul>
+
+            </div>
+            <!-- <div>
+                <ul>
+                    <li class="item"><a href="#"> English</a></li>
+                    <li class="item-button">Love Porwal</li>
+                    <li class="item-button-secondary"><a href="./payment.html">Book Demo</a></li>
+                </ul>
+            </div> -->
+        </div>
+
+
+    </nav>
+        
+        <div class="paymentBox">
+            <h2>Make Payment</h2>
+            <div id="cardHead"><p>Enter Credit / Debit Card Details</p></div>
+
+            <div id="details">
+                <div id="form">
+                    <label for=""> Enter Card Number</label>
+                    <input type="number" id="cardnumber" placeholder="Enter Card Number" required>
+                    <label for=""> Expiry Date</label>
+                    <input type="month" placeholder="Enter Expiry Date"  id="ExpiryDate" required>
+                    <label for=""> CVV</label>
+                    <input type="password" id="Cvv" placeholder="Enter CVV" required><br>
+                    <a href="./sucess.html"><button id="btn">Proceed To Pay</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script src="./payment.js"></script>
+<script src="./home.js"></script>

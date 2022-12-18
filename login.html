@@ -5,49 +5,70 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign up Page</title>
-  <style>
-      /* Write all necessery css here  */
-  </style>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+
 </head>
 
 <body>
-  <div class="nav">
-    <a href="./index.html">Signup</a>
-    <a href="./signin.html">Signin</a>
+
+  <div class="box1">
+    <div><a href="./index.html"><img id="img_1" src="./sys_logo.PNG"></a>
+      <div class="rightnav">
+        <p>Don't have an account?
+
+          <a href="./signup.html"> Sign Up </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="box2_1">
+        <img id="img2_1" src="./sys_logo.PNG" style="width: 30%;" onclick="logo()">
+        <div>
+          <p id="p1">ANNOUNCING SUMMER 2022 PRODUCT RELEASE</p>
+          <p id="p2"><a>Monetize Effectively to Tackle Market</a></p>
+        </div>
+        <div class="img3_1"> <img src="https://d190vb4jo83j4z.cloudfront.net/Login-fall-2020_banner.png" alt="Chargebee"
+            align="left">
+          <p class="para1">SupportSys Fall 2020 Product Lineup brings to you new capabilities and some key upgrades
+            designed to accelerate your time to market.</p>
+        </div>
+        <p class="para2">Check out the Fall 2020 updates</p>
+      </div>
+
+
+      <div class="box2_2">
+        <div>
+          <h4 id="h4">Sign in to SupportSys!</h4>
+
+          <form action="/action_page.php">
+            <label for="mail"></label>
+            <input type="text" class="input" id="email" placeholder=" name@company.com"><br><br>
+            <label for="passord"></label>
+            <input type="password" class="input" id="password" placeholder=" password"><br><br>
+            <!-- <h4 class="signup" align="left"  value="Submit" >Sign in </h4> -->
+            <input type="submit" value="Submit" class="signup"/>
+            <p class="forpass">Forgot Password ?</p>
+          </form>
+          <div>
+            <button class="btn"><img id="img6" src="g_logo.png" align="left" />
+              <p class="p7"><a href>Sign in with goggle</a></p>
+            </button>
+            <p class="btn2"><a href>Sign in with single sign-On</a></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="p6">
+      <p>🌎 You are on our US data hosting centre. Switch to our EU data hosting centre</p>
+    </div>
   </div>
-  <div id="signup">
-    <h1>Please Enter Your Details</h1>
-    <form>
-      <input type="text" id="name">
-      <input type="email" id="email">
-      <input type="password"  id="password">
-      <input type="submit" value="Submit" />
-    </form>
-  </div>
+
 </body>
-<script>
-  let account = JSON.parse(localStorage.getItem("account-data"))||[];
-
-  let form = document.querySelector("form");
-
-  form.addEventListener("submit",function(event){
-    event.preventDefault();
-
-    let students = {
-      name : form.name.value,
-      email : form.email.value,
-      password : form.password.value,
-      
-    }
-
-    if(students.name ==""|| students.email == ""|| students.password == ""){
-      alert("fill all the details");
-    }else{
-      account.push(students);
-      localStorage.setItem("account-data",JSON.stringify(account));
-    }
-  })
-</script>
 
 </html>
+<script src="./login.js"></script>
+<script src="./home.js"></script>

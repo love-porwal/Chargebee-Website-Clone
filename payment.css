@@ -1,0 +1,161 @@
+.payment{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+.topLogo img{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.paymentBox{
+    /* position: absolute; */
+    /* left: 150px; */
+    background-color: white;
+    width: 50%;
+    height: 500px;
+    padding: 2%;
+   margin-top: 20px;
+   /* border: 1px solid  saddlebrown; */
+   margin: auto;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#cardHead{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+#details{
+    margin: auto;
+    width: 60%;
+    padding: 5%;
+    line-height: 2;
+}
+
+#details #form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    
+}
+#details #form input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 2% 0;
+    margin-bottom: 2%;
+    font-size: 18px;
+}
+input:focus{
+    outline: none;
+}
+
+button{
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    font-size: 20px;
+    background: #00bcd4;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+#btn:hover{
+    cursor: pointer;
+}
+
+::placeholder{
+    color: #b36916;
+}
+
+@media only screen and (max-width: 400px){
+    .paymentBox{
+        position: absolute;
+        left: 20px;
+        width: 90%;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    #details #form{
+     
+        width: 100%;
+        margin: auto;
+        
+    }
+    button{
+        width: 100%;
+    }
+    }
+
+
+    /* nav */
+
+    
+nav {
+    width: auto;
+    padding: 10px 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    height: auto;
+}
+
+#navBar {
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 10%;
+    margin: auto;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 0px;
+
+}
+
+#navBar div:nth-child(1) {
+    /* border: 1px solid rgb(24, 184, 59); */
+    width: 20%;
+}
+
+#navBar div:nth-child(2) {
+    /* border: 1px solid rgb(24, 184, 59); */
+    width: 100%;
+
+
+}
+
+#navBar ul {
+    /* border: 1px solid rgb(19, 19, 20); */
+    display: flex;
+    gap: 5%;
+    justify-content: flex-start;
+    font-size: 21px;
+    list-style: none;
+    color: black;
+   
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+
+    text-decoration: underline;
+    color: rgb(96, 59, 230);
+}
+
+img {
+    width: 100%;
+
+    /* border: 1px solid rgb(231, 173, 14); */
+}
+
+.paymentBox > h2{
+    text-align: center;
+}

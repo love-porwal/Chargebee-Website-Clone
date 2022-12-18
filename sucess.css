@@ -1,0 +1,19 @@
+.item-button {
+    background-color: #0cec44;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+#btn-1 {
+    background-color: #5c00b5;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+   
+}
+#btn-1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
